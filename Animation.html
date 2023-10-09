@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .box {
+            height: 500px;
+            background-color: red;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .one, .two, .three {
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+        .two:hover {
+            transform: translatex(100px);
+            transform: rotatey(360deg);
+            transform: scale(0.5) translateX(100px);
+            background-color: blue;
+        }
+
+        .one:hover {
+            transform: translateX(200px);
+            transform: rotatex(360deg);
+        }
+
+        .container {
+            height: 500px;
+            /* background-color: yellow; */
+            background-image: url("computer.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation-name: change;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes change {
+            0% {
+                background-image: url("computer.jpg");
+            }
+
+            50% {
+                background-image: url("group1.png");
+            }
+
+            80% {
+                background-image: url("iphone.jpg");
+            }
+
+            100% {
+                background-image: url("computer.jpg");
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div> -->
+
+    <div class="container"></div>
+</body>
+</html>

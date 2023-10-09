@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <style>
+        h {
+            color: rgba(39, 54, 194, 0.651);
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(iphone.jpg);
+            background-size: cover;
+            background-color: rgb(240, 240, 159);
+            border-radius: 10px;
+            padding: 20px 100px 20px 50px;
+        }
+
+        body {
+            background-color: azure;
+            margin-left: 30px;
+        }
+
+        input {
+            width: 300px;
+            height: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        button {
+            width: 60px;
+            height: 25px;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            margin-left: 150px;
+        }
+
+        .checkbox {
+            width: 100px;
+            height: 25px;
+        }
+
+        select {
+            width: 100px;
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        form {
+            background-color: white;
+            padding-left: 30px;
+            width: 330px;
+            border-radius: 10px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 60px;
+            border-radius: 5px;
+        }
+
+        .od {
+            margin-left: 27px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h>Appointment Form</h>
+    <br><br>
+    <form>
+    <label>Name</label>
+    <br>
+    <input type="Name">
+    <br>
+    <label>Email</label>
+    <br>
+    <input type="Email">
+    <br>
+    <label>Phone number</label>
+    <br>
+    <input type="Phone number"><br>
+    <label>choose date</label>
+    <label class="od">choose time</label>
+    <br>
+    <input class="checkbox" name="date" id="date">
+    <select>
+        <option></option>
+    </select>
+    <br>
+    <label>Comments</label>
+    <br>
+    <textarea></textarea>
+    <br>
+    <button>submit</button>
+</form>
+</body>
+</html>
